@@ -1,14 +1,32 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-navbar>
-</ion-header>
-
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+<ion-content>
+	<ion-slides pager (ionSlideDidChange)="slideChanged()">
+		<ion-slide>
+     		<div class="diag" style="background: url('assets/img/whitebg.svg') no-repeat">
+  				<ion-icon ios="ios-analytics" md="md-analytics" color="primary"></ion-icon>
+			</div>
+			<div>
+				<h2>Here you go to the page 01</h2>
+				<p>this is describle the stuffs on page ane, and you can see more details bellow</p>
+			</div>
+		</ion-slide>
+		<ion-slide>
+      		<div class="diag" style="background: url('assets/img/whitebg.svg') no-repeat">
+				<ion-icon ios="ios-trophy" md="md-trophy" color="primary"></ion-icon>
+			</div>
+			<div>
+				<h2>Here you go to the page 01</h2>
+				<p>this is describle the stuffs on page ane, and you can see more details bellow</p>
+			</div>
+		</ion-slide>
+		<ion-slide>
+      		<div class="diag" style="background: url('assets/img/whitebg.svg') no-repeat">
+        		<ion-icon ios="ios-chatboxes" md="md-chatboxes" color="primary"></ion-icon>
+			</div>
+			<div>
+				<h2>Here you go to the page 01</h2>
+				<p>this is describle the stuffs on page ane, and you can see more details bellow</p>
+			</div>
+		</ion-slide>
+	</ion-slides>
+	<button (click)="skip()" id="skip">{{skipMsg}}</button>
 </ion-content>
